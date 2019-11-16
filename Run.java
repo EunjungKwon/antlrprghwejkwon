@@ -7,7 +7,6 @@ public class Run {
     	
     	CharStream input = CharStreams.fromFileName("test.txt");
   
-       // CharStream input = CharStreams.fromStream(System.in);
         CalculatorLexer lexer = new CalculatorLexer(input);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         CalculatorParser parser = new CalculatorParser(tokens);
